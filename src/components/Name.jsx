@@ -13,55 +13,82 @@ const Name = () => {
 
         
 
-        <div className="grid grid-cols-2 gap-4 mt-6">
-          <div>
-            <label className="text-sm font-semibold">Name of Exam:</label>
+        <div className="flex flex-col gap-2 mt-6">
+          <div className="flex gap-7 w-full">
+            <div>
+            <label className=" inline text-sm font-semibold ">Name of Exam:</label>
             <input
               type="text"
-              className="w-full border-b border-black p-1 mt-1 text-sm focus:outline-none focus:border-blue-500"
+              className="text-sm w-[450px] border-b focus:outline-none border-black inline-block"
             />
-          </div>
-          <div>
-            <label className="text-sm font-semibold">Branch & Section:</label>
+            </div>
+            <div className="flex ">
+            <label className=" inline text-sm font-semibold ">(Reg./Supp)Month:</label>
             <input
               type="text"
-              className="w-full border-b border-black p-1 mt-1 text-sm focus:outline-none focus:border-blue-500"
+              className="  pl-2 text-sm w-[200px] border-b focus:outline-none border-black inline-block"
+            />
+            <label className=" inline text-sm font-semibold ">20</label>
+            <input
+              type="text"
+              className="  pl-2 text-sm w-[50px] border-b focus:outline-none border-black inline-block"
             />
           </div>
+          <div className="mt-3">
+            <label className=" inline text-sm font-semibold">Branch & Section:</label>
+            <input
+              type="text"
+              className="pl-2 text-sm w-[670px] border-b focus:outline-none border-black inline-block"
+            />
+            <label className=" pl-2 inline text-sm font-semibold">Regulation:</label>
+            <input
+              type="text"
+              className="pl-2 text-sm w-[80px] border-b focus:outline-none border-black inline-block"
+            />
+          </div>
+          <div className="flex mt-3 gap-2">
           <div>
             <label className="text-sm font-semibold">Name of Lab:</label>
             <input
               type="text"
-              className="w-full border-b border-black p-1 mt-1 text-sm focus:outline-none focus:border-blue-500"
+              className="pl-2 text-sm w-[400px] border-b focus:outline-none border-black inline-block"
             />
           </div>
           <div>
             <label className="text-sm font-semibold">Date of Examination:</label>
             <input
-              type="date"
-              className="w-full border-b border-black p-1 mt-1 text-sm focus:outline-none focus:border-blue-500"
+              type="text"
+              className="pl-2 text-sm w-[130px] border-b focus:outline-none border-black inline-block"
             />
           </div>
           <div>
+            <label className="text-sm font-semibold">Max.Marks:</label>
+            <input
+              type="text"
+              className="pl-2 text-sm w-[60px] border-b focus:outline-none border-black inline-block"
+            />
+          </div>
+          </div>
+          <div className=" gap-1 flex mt-3 ">
             <label className="text-sm font-semibold">Name & College of External Examiner:</label>
             <input
               type="text"
-              className="w-full border-b border-black p-1 mt-1 text-sm focus:outline-none focus:border-blue-500"
+              className="pl-2 text-sm w-[700px] border-b focus:outline-none border-black inline-block"
             />
           </div>
-          <div>
+          <div className="flex gap-1 mt-3">
             <label className="text-sm font-semibold">Name of Internal Examiner:</label>
             <input
               type="text"
-              className="w-full border-b border-black p-1 mt-1 text-sm focus:outline-none focus:border-blue-500"
+              className="pl-2 text-sm w-[752px] border-b focus:outline-none border-black inline-block"
             />
           </div>
         </div>
-        <div className="mt-4 text-sm">
-          <p>Note:</p>
-          <ol className="list-decimal ml-6">
-            <li>Please enter the marks in the serial order of the Hall Ticket Numbers of the students.</li>
-            <li>The award list must be submitted to the Controller of Examinations along with the Statement of Attendance.</li>
+        <div className="mt-4 text-sm flex">
+          <p className="font-bold">Note:</p>
+          <ol className="ml-6">
+            <li>1) Please enter the marks in the serial order of the Hall Ticket Numbers of the students.</li>
+            <li>2) The award list must be submitted to the Controller of Examinations along with the Statement of Attendance.</li>
           </ol>
         </div>
         <table className="w-full text-sm border-collapse border border-gray-300 mt-6">
