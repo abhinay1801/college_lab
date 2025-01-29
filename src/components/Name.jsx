@@ -93,21 +93,23 @@ const Name = () => {
           </ol>
         </div>
         <table className="w-full text-sm border-collapse border border-gray-300 mt-6">
-          <thead>
+        <thead>
             <tr className="bg-gray-200">
-              <th className="border border-gray-300 p-1">S. No.</th>
-              <th className="border border-gray-300 p-1">Hall Ticket Number</th>
-              <th className="border border-gray-300 p-1">Program 1 Executed</th>
-              <th className="border border-gray-300 p-1">Mapping CO</th>
-              <th className="border border-gray-300 p-1">Write Up (10M)</th>
-              <th className="border border-gray-300 p-1">Compile Errors (15M)</th>
-              <th className="border border-gray-300 p-1">Execution (15M)</th>
-              <th className="border border-gray-300 p-1">Program 2</th>
-              <th className="border border-gray-300 p-1">Mapping CO</th>
-              <th className="border border-gray-300 p-1">Program & Viva (10M)</th>
-              <th className="border border-gray-300 p-1">Total Marks (60M)</th>
+            <th className="border border-gray-300 p-1 w-12">S. No.</th>
+            <th className="border border-gray-300 p-1 w-20">Set. No.</th>
+            <th className="border border-gray-300 p-1 w-40">Hall Ticket Number of Student</th>
+            <th className="border border-gray-300 p-1 w-42">Program 1 Executed</th>
+            <th className="border border-gray-300 p-1 w-10">Mapping CO</th>
+            <th className="border border-gray-300 p-1 w-24">Write Up (10M)</th>
+            <th className="border border-gray-300 p-1 w-24">Compile Errors (15M)</th>
+            <th className="border border-gray-300 p-1 w-24">Execution (15M)</th>
+            <th className="border border-gray-300 p-1 w-42">Program 2</th>
+            <th className="border border-gray-300 p-1 w-10">Mapping CO</th>
+            <th className="border border-gray-300 p-1 w-14">Program & Syntax (10M)</th>
+            <th className="border border-gray-300 p-1 w-10">Viva-Voice  (10M)</th>
+            <th className="border border-gray-300 p-1 w-24">Total Marks (60M)</th>
             </tr>
-          </thead>
+        </thead>
           <tbody>
             {Array.from({ length: 64 }, (_, index) => (
               <tr key={index}>
@@ -116,6 +118,12 @@ const Name = () => {
                 </td>
                 <td className="border border-gray-300 p-1">
                   <input
+                    type="number"
+                    className="w-full border-none outline-none text-sm"
+                  />
+                </td>
+                <td className="border border-gray-300 p-1">
+                  <input
                     type="text"
                     className="w-full border-none outline-none text-sm"
                   />
@@ -159,6 +167,12 @@ const Name = () => {
                 <td className="border border-gray-300 p-1">
                   <input
                     type="text"
+                    className="w-full border-none outline-none text-sm"
+                  />
+                </td>
+                <td className="border border-gray-300 p-1">
+                  <input
+                    type="number"
                     className="w-full border-none outline-none text-sm"
                   />
                 </td>
